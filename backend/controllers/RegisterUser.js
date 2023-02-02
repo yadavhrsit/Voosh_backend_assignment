@@ -24,8 +24,6 @@ function RegisterUser(req, res) {
                 message: "Registration failed"
             })
         })
-
-
     });
 
 }

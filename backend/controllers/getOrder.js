@@ -1,6 +1,4 @@
 const OrderModal = require("../modals/OrderSchema");
-const mongoose = require('mongoose');
-const ProductModal = require("../modals/ProductSchema");
 async function getOrder(req, res) {
     let orders = await OrderModal.find({
         user: req.body.user_id,

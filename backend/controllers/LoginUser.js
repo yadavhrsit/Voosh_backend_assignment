@@ -20,7 +20,7 @@ function LoginUser(req, res) {
                     if (result) {
                         let accesstoken = jwt.sign({ phone }, process.env.JWT_ACCESS_TOKEN, { expiresIn: "120m" })
                         return res.json({
-                            message: "logged in successfully",
+                            message: "Logged in successfully",
                             login: true,
                             token: accesstoken
                         })

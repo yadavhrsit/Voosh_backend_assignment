@@ -1,4 +1,3 @@
-const { response } = require("express");
 const OrderModal = require("../modals/OrderSchema");
 const ProductModal = require("../modals/ProductSchema");
 async function addOrder(req, res) {
